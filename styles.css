@@ -1,11 +1,257 @@
-/* Add your CSS to this file */
 body {
     margin: 0;
     font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
 
-.container {
+
+header {
+    background-color: white;
+    font-size: 18px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header .container>nav>ul {
+    display: flex;
+    column-gap: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+header .container>nav>ul>li>a {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: bold;
+}
+
+header .container>nav>ul>li>a:hover {
+    color: #5A67D8;
+}
+
+
+main>.overview-hero>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E8F0;
+    padding: 50px;
+}
+
+main>.overview-hero>.container img {
+    width: 300px;
+    height: 200px;
+}
+
+.overview-hero-image>img {
+    width: 20em;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    width: 250px;
+    height: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-overflow: unset;
+}
+
+.card h3 {
+    color:  #48BB78;;
+}
+
+.card img {
+    height: 8em;
+}
+
+.learn-about .container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+    padding-left: 160px;
+}
+
+.learn-about>h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+    margin-top: 3em;
+}
+
+.testing-description p {
+    width: 70%;
+}
+
+.testing-description {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.testing .cta .btn {
+    background-color: #48BB78;
+    border-radius: 5px;
+    width: 300px;
+    padding: 1em;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.stories {
+    color: #5A67D8;
+    display: flex;
+    justify-content: center;
+}
+
+.stories .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.stories .container article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.stories h2 {
+    color: #5A67D8;
+}
+
+.stories h3 {
+    font-size: 18px;
+}
+
+.stories a {
+    color: #5A67D8;
+}
+
+.stories article img {
+    border-radius: 50%;
+}
+
+.article-body>h3 {
+    color: #000;
+}
+
+.article-body a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-body>p {
+    color: #000;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    width: 40%;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+    outline: none;
+    border: none;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+.newsletter p {
+    margin-left: 45px;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    height: 90px;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+article img {
+    height:14rem;
+    width: 14rem;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+}
+
+form input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+
+.message {
+    margin: 45px;
 }
